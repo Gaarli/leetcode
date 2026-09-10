@@ -36,7 +36,7 @@ class Solution:
         fast = head
         # Se atentar na velocidade relativa
         # Como é 2-1, então e como se um tivesse parado
-        # E o outro vai andando 1 por 1
+        # E o outro vai andando 1 por 1 (verificação)
         while fast and fast.next:
             slow = slow.next
             fast = fast.next.next
