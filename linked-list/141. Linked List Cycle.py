@@ -34,7 +34,9 @@ class Solution:
     def hasCycle(self, head: Optional[ListNode]) -> bool:
         slow = head
         fast = head
-
+        # Se atentar na velocidade relativa
+        # Como é 2-1, então e como se um tivesse parado
+        # E o outro vai andando 1 por 1
         while fast and fast.next:
             slow = slow.next
             fast = fast.next.next
